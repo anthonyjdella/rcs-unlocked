@@ -84,6 +84,7 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 
 [Download Signal RCS Rich Messaging.postman_collection.json](./assets/Signal-RCS-Rich-Messaging.postman_collection.json)  
 
+---
 
 ## 🎉 Getting Started
 
@@ -256,6 +257,8 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 ```
 </details>
 
+---
+
 ### Step 2. Choose a Package or A La Carte
 
 Create a TEMPLATE: Package or A la Carte Rich Card with 2 Quick replies
@@ -310,6 +313,8 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
+
+---
 
 ### Step 3. Package Menu
 
@@ -423,9 +428,13 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 ```
 </details>
 
+---
+
 ### Step 4. Delivery Location
 
 Create RCS Text to prompt for text response
+
+---
 
 ### Step 5. Order Summary - Card Chip List
 
@@ -487,6 +496,8 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
+
+---
 
 ### Step 6. Payment - stored payment method
 
@@ -552,6 +563,8 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
+
+---
 
 ### Step 7. Order Confirmation
 
@@ -695,6 +708,8 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
+
+---
 
 ### Step 8. Transactional Updates with quick action to Call the Coordinator
 
