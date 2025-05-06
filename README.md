@@ -13,11 +13,15 @@ In this lab, you'll learn how to:
 
 Come see how Twilio + RCS can help you create powerful, interactive messaging experiences for your users.
 
+---
+
 ## 🎯 Workshop Objectives
 
 - [ ] Create an RCS Sender and whitelist RCS-enabled test phone number
 - [ ] Add the RCS Sender to a Messaging Service
 - [ ] Send Rich Messages using a Messaging Service
+
+---
 
 ## 🧰 Prerequisites
 
@@ -42,3 +46,32 @@ You should be familiar with:
 
 4. **An RCS-enabled Mobile Device**
 
+---
+
+## 💡 Rich Messaging Concepts
+
+### 📘 Basic Terminology
+
+- **Content Sid**  
+  A unique identifier for a content template. It is a 34-character string that starts with `HX`, and can only be used by the Twilio Account SID that created it.
+
+- **Content Variables**  
+  Placeholders used to substitute values at runtime in a content template. When creating a template with variables, sample values are typically required.
+
+- **Content Types**  
+  Twilio’s omnichannel representation of rich content. Many types can be used interchangeably across messaging channels with no customization. However, some components within a content type may be incompatible with certain channels, even if the type is generally supported.
+
+---
+
+### 🖥️ Twilio Console UI Experience
+
+Twilio offers a visual interface for managing your rich messaging content. From the [Console](https://console.twilio.com/), you can:
+
+- Create and manage content templates
+- Add variables and see real-time previews
+- Associate templates with Messaging Services
+
+📸 **Example Screenshot**  
+![Content Template UI](./assets/content-template-ui.png)  
+
+🔗 [Learn more in the Twilio Docs]([https://www.twilio.com/docs/messaging/content-api/overview](https://www.twilio.com/docs/content))
