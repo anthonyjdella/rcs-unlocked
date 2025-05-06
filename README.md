@@ -13,14 +13,14 @@ Welcome to this 60-minute hands-on lab for intermediate Twilio users at [SIGNAL 
 5. [Twilio Console UI Experience](#twilio-console-ui-experience)
 6. [Resources](#resources)
 7. [Getting Started](#getting-started)
-    - [Step 1: Create a Promotional Template (Choose One)](#step-1-create-a-promotional-template-choose-one)
-    - [Step 2: Choose a Package or A La Carte](#step-2-choose-a-package-or-a-la-carte)
-    - [Step 3: Package Menu](#step-3-package-menu)
-    - [Step 4: Delivery Location](#step-4-delivery-location)
-    - [Step 5: Order Summary - Card Chip List](#step-5-order-summary---card-chip-list)
-    - [Step 6: Payment - Stored Payment Method](#step-6-payment---stored-payment-method)
-    - [Step 7: Order Confirmation](#step-7-order-confirmation)
-    - [Step 8: Transactional Updates with Quick Action to Call the Coordinator](#step-8-transactional-updates-with-quick-action-to-call-the-coordinator)
+    - [Step 1: Create a Promotional Message Template (Choose One)](#step-1-create-a-promotional-message-template-choose-one)
+    - [Step 2: Present Package or A La Carte Menu](#step-2-present-package-or-a-la-carte-menu)
+    - [Step 3: Show Package Options as a Carousel](#step-3-show-package-options-as-a-carousel)
+    - [Step 4: Request Delivery Location](#step-4-request-delivery-location)
+    - [Step 5: Send Order Summary with Action Chips](#step-5-send-order-summary-with-action-chips)
+    - [Step 6: Confirm Payment Using Stored Method](#step-6-confirm-payment-using-stored-method)
+    - [Step 7: Send Order Confirmation](#step-7-send-order-confirmation)
+    - [Step 8: Send Transactional Update with Quick Action and Call Option](#step-8-send-transactional-update-with-quick-action-and-call-option)
 
 ---
 
@@ -110,13 +110,13 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 
 ## Getting Started
 
-### Step 1: Create a Promotional Template (Choose One)
+### Step 1: Create a Promotional Message Template (Choose One)
 
-You’ll start by creating a template for a promotional message. Choose one of the two options below (creating a carousel or a rich card template):
+Start by creating a rich promotional message template. You can choose either a carousel (multiple cards) or a single rich card with media.
 
-#### Option A: Carousel Template (Multiple Cards)
+#### Option A: Create a Carousel Template (Multiple Cards)
 
-First, create a carousel template.
+This option creates a carousel template with multiple event cards and actions.
 
 <details>
   <summary>Click to view the code</summary>
@@ -212,7 +212,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HX4c3e08a18d3f05b564a226badf638cf7`
 
-Next, send the message to a user.
+Next, send the carousel message to a user.
 
 <details>
   <summary>Click to view the code</summary>
@@ -226,10 +226,9 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 ```
 </details>
 
+#### Option B: Create a Rich Card Template with Media
 
-#### Option B: Rich Card Template with Media
-
-First, create a rich card template with media.
+This option creates a single rich card with media, quick actions, and links.
 
 <details>
   <summary>Click to view the code</summary>
@@ -265,7 +264,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HXaa7686847b4a35ced2c080d5a841b37a`
 
-Next, send the message to a user.
+Next, send the rich card message to a user.
 
 <details>
   <summary>Click to view the code</summary>
@@ -281,9 +280,9 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 2: Choose a Package or A La Carte
+### Step 2: Present Package or A La Carte Menu
 
-Create a TEMPLATE: Package or A la Carte Rich Card with 2 Quick replies
+Create a template that prompts the user to choose between a package or an a la carte menu using quick replies.
 
 <details>
   <summary>Click to view the code</summary>
@@ -322,7 +321,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HX4f5dd3d8824daa877df42546f2fdd6a9`
 
-Next, send the message to a user.
+Next, send the package or a la carte menu to the user.
 
 <details>
   <summary>Click to view the code</summary>
@@ -338,9 +337,9 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 3: Package Menu
+### Step 3: Show Package Options as a Carousel
 
-Create a template - Rich Card Carousel
+Create a carousel template that displays available package options, each with actions.
 
 <details>
   <summary>Click to view the code</summary>
@@ -436,7 +435,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HX12da7e1c56ac98c8739d8090fc4fb602`
 
-Next, Send Package Menu Rich Card Carousel
+Next, send the package options carousel to the user.
 
 <details>
   <summary>Click to view the code</summary>
@@ -452,15 +451,15 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 4: Delivery Location
+### Step 4: Request Delivery Location
 
-Create RCS Text to prompt for text response
+Prompt the user to reply with their delivery location using a simple RCS text message.
 
 ---
 
-### Step 5: Order Summary - Card Chip List
+### Step 5: Send Order Summary with Action Chips
 
-Create order summary template with chip list
+Create a template that summarizes the order and provides quick reply chips for confirmation, editing, or calling support.
 
 <details>
   <summary>Click to view the code</summary>
@@ -505,7 +504,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HX921836a9f710b0ba613d522218cd0724`
 
-Next, Send RCS with Chiplist (no media/using twilio/card) (Chiplist 2 quick replies and 1PN)
+Next, send the order summary with action chips to the user.
 
 <details>
   <summary>Click to view the code</summary>
@@ -521,9 +520,9 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 6: Payment - stored payment method
+### Step 6: Confirm Payment Using Stored Method
 
-Create Payment confirmation template with Rich Card Chip List
+Create a payment confirmation template that allows the user to confirm or pause payment, and provides a call option.
 
 <details>
   <summary>Click to view the code</summary>
@@ -572,7 +571,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HX9a32a4307bc4e420c521f75e7eceeaf8`
 
-Next, Send RCS with Rich Card for Payment (w media/using twilio/card) (Chiplist 2 quick replies and 1PN)
+Next, send the payment confirmation message to the user.
 
 <details>
   <summary>Click to view the code</summary>
@@ -588,11 +587,13 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 7: Order Confirmation
+### Step 7: Send Order Confirmation
 
-Option 1 PNG with message body
+You have multiple options for confirming the order:
 
-Create MEDIA TEMPLATE (media/body)
+**Option 1: Send PNG Receipt with Message Body**
+
+Create and send a media template with a PNG receipt and confirmation message.
 
 <details>
   <summary>Click to view the code</summary>
@@ -617,7 +618,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HX6bca18ddf61bb5b7e554d873fbf4fc51`
 
-Next, Send Order Confirmation RCS w media png and body/using twilio/card
+Next, send the order confirmation RCS with media PNG and body.
 
 <details>
   <summary>Click to view the code</summary>
@@ -631,9 +632,9 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 ```
 </details>
 
-Option 2 PDF, no message body
+**Option 2: Send PDF Receipt (No Message Body)**
 
-Create Order Confirmation w MEDIA WITH TEMPLATE with PDF (cannot have body)
+Create and send a media template with a PDF receipt (no message body allowed).
 
 <details>
   <summary>Click to view the code</summary>
@@ -656,7 +657,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HXda90b029a8c48dacbfdfd0152c054df5`
 
-Send Order Confirmation RCS w media PDF and no body/using twilio/media
+Next, send the order confirmation RCS with media PDF and no body.
 
 <details>
   <summary>Click to view the code</summary>
@@ -670,9 +671,9 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 ```
 </details>
 
-Option 3 PDF on rich card FAILED WITH 63021 invalid content error
+**Option 3: Send PDF on Rich Card (May Fail with Error)**
 
-Create Order Confirmation w Rich Card Template (pdf for media, body and 1 action/PN)
+Create and send a rich card template with a PDF, message body, and call-to-action. (Note: This may fail with a 63021 invalid content error.)
 
 <details>
   <summary>Click to view the code</summary>
@@ -716,7 +717,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HX8c4dc565a972de9f14bb12cf63492945`
 
-Send Order Confirmation Rich Card TEMPLATE (pdf and body and 1 action)
+Next, send the order confirmation rich card template (PDF and body and 1 action).
 
 <details>
   <summary>Click to view the code</summary>
@@ -732,9 +733,9 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 8: Transactional Updates with Quick Action to Call the Coordinator
+### Step 8: Send Transactional Update with Quick Action and Call Option
 
-Create Rich Card with 1 Quick Reply and 1 Phone Number
+Create a rich card template for transactional updates, including a quick reply for assistance and a call button for the coordinator.
 
 <details>
   <summary>Click to view the code</summary>
@@ -778,7 +779,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 
 Output: `Content SID: HX61dce72ab43b9867fbf61018c9a64f69`
 
-Send Transactional update with quick reply and Call Option
+Next, send the transactional update message to the user.
 
 <details>
   <summary>Click to view the code</summary>
