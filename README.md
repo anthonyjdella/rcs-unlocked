@@ -91,7 +91,6 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 
 You’ll start by creating a template for a promotional message. Choose one of the two options below (creating a carousel or a rich card template):
 
-
 #### Option A: Carousel Template (Multiple Cards)
 
 First, create a carousel template.
@@ -186,6 +185,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HX4c3e08a18d3f05b564a226badf638cf7`
 
@@ -201,6 +201,8 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HX4c3e08a18d3f05b564a226badf638cf7" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
+
 
 #### Option B: Rich Card Template with Media
 
@@ -236,6 +238,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HXaa7686847b4a35ced2c080d5a841b37a`
 
@@ -251,6 +254,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HXaa7686847b4a35ced2c080d5a841b37a" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
 
 ### Step 2. Choose a Package or A La Carte
 
@@ -289,6 +293,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HX4f5dd3d8824daa877df42546f2fdd6a9`
 
@@ -304,6 +309,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HX4f5dd3d8824daa877df42546f2fdd6a9" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
 
 ### Step 3. Package Menu
 
@@ -399,6 +405,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HX12da7e1c56ac98c8739d8090fc4fb602`
 
@@ -414,6 +421,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HX12da7e1c56ac98c8739d8090fc4fb602" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
 
 ### Step 4. Delivery Location
 
@@ -462,6 +470,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HX921836a9f710b0ba613d522218cd0724`
 
@@ -477,6 +486,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HX921836a9f710b0ba613d522218cd0724" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
 
 ### Step 6. Payment - stored payment method
 
@@ -525,6 +535,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HX9a32a4307bc4e420c521f75e7eceeaf8`
 
@@ -539,8 +550,8 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "To=+18138958197" \
 --data-urlencode "ContentSid=HX9a32a4307bc4e420c521f75e7eceeaf8" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
-
 ```
+</details>
 
 ### Step 7. Order Confirmation
 
@@ -567,6 +578,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HX6bca18ddf61bb5b7e554d873fbf4fc51`
 
@@ -582,6 +594,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HX6bca18ddf61bb5b7e554d873fbf4fc51" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
 
 Option 2 PDF, no message body
 
@@ -604,6 +617,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HXda90b029a8c48dacbfdfd0152c054df5`
 
@@ -620,6 +634,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HXda90b029a8c48dacbfdfd0152c054df5" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
 
 Option 3 PDF on rich card FAILED WITH 63021 invalid content error
 
@@ -663,6 +678,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HX8c4dc565a972de9f14bb12cf63492945`
 
@@ -678,6 +694,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HX8c4dc565a972de9f14bb12cf63492945" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
 
 ### Step 8. Transactional Updates with quick action to Call the Coordinator
 
@@ -721,6 +738,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
    }
 }'
 ```
+</details>
 
 Output: `Content SID: HX61dce72ab43b9867fbf61018c9a64f69`
 
@@ -736,3 +754,4 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 --data-urlencode "ContentSid=HX61dce72ab43b9867fbf61018c9a64f69" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
+</details>
