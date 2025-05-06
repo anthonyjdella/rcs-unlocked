@@ -24,7 +24,7 @@ Welcome to this 60-minute hands-on lab for intermediate Twilio users at [SIGNAL 
 
 ---
 
-## 📖 Workshop Overview
+## Workshop Overview
 
 RCS (Rich Communication Services) is the next big thing in messaging and it's already making waves. Twilio already delivers over 750M RCS messages every month! 
 
@@ -37,7 +37,7 @@ Come see how Twilio + RCS can help you create powerful, interactive messaging ex
 
 ---
 
-## 🎯 Workshop Objectives
+## Workshop Objectives
 
 - [ ] Create an RCS Sender and whitelist RCS-enabled test phone number
 - [ ] Add the RCS Sender to a Messaging Service
@@ -45,7 +45,7 @@ Come see how Twilio + RCS can help you create powerful, interactive messaging ex
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 
 Before the workshop, make sure to have the following:
 
@@ -70,9 +70,9 @@ You should be familiar with:
 
 ---
 
-## 💡 Rich Messaging Concepts
+## Rich Messaging Concepts
 
-### 📘 Basic Terminology
+### Basic Terminology
 
 - **Content Sid**  
   A unique identifier for a content template. It is a 34-character string that starts with `HX`, and can only be used by the Twilio Account SID that created it.
@@ -85,7 +85,7 @@ You should be familiar with:
 
 ---
 
-### 🖥️ Twilio Console UI Experience
+### Twilio Console UI Experience
 
 Twilio offers a visual interface for managing your rich messaging content. From the [Console](https://console.twilio.com/), you can:
 
@@ -100,7 +100,7 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 
 ---
 
-## 📚 Resources
+## Resources
 
 ### 🧑‍💻 Postman Collection
 
@@ -108,7 +108,7 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 
 ---
 
-## 🎉 Getting Started
+## Getting Started
 
 ### Step 1: Create a Promotional Template (Choose One)
 
