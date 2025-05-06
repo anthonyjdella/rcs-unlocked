@@ -2,6 +2,28 @@
 
 Welcome to this 60-minute hands-on lab for intermediate Twilio users at [SIGNAL 2025](https://signal.twilio.com/2025)!
 
+---
+
+## 📚 Table of Contents
+
+1. [Workshop Overview](#workshop-overview)
+2. [Workshop Objectives](#workshop-objectives)
+3. [Prerequisites](#prerequisites)
+4. [Rich Messaging Concepts](#rich-messaging-concepts)
+5. [Twilio Console UI Experience](#twilio-console-ui-experience)
+6. [Resources](#resources)
+7. [Getting Started](#getting-started)
+    - [Step 1: Create a Promotional Template](#step-1-create-a-promotional-template)
+    - [Step 2: Choose a Package or A La Carte](#step-2-choose-a-package-or-a-la-carte)
+    - [Step 3: Package Menu](#step-3-package-menu)
+    - [Step 4: Delivery Location](#step-4-delivery-location)
+    - [Step 5: Order Summary - Card Chip List](#step-5-order-summary---card-chip-list)
+    - [Step 6: Payment - Stored Payment Method](#step-6-payment---stored-payment-method)
+    - [Step 7: Order Confirmation](#step-7-order-confirmation)
+    - [Step 8: Transactional Updates](#step-8-transactional-updates)
+
+---
+
 ## 📖 Workshop Overview
 
 RCS (Rich Communication Services) is the next big thing in messaging and it's already making waves. Twilio already delivers over 750M RCS messages every month! 
