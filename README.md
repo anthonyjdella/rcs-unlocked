@@ -13,14 +13,14 @@ Welcome to this 60-minute hands-on lab for intermediate Twilio users at [SIGNAL 
 5. [Twilio Console UI Experience](#twilio-console-ui-experience)
 6. [Resources](#resources)
 7. [Getting Started](#getting-started)
-    - [Step 1: Create a Promotional Template](#step-1-create-a-promotional-template)
+    - [Step 1: Create a Promotional Template (Choose One)](#step-1-create-a-promotional-template-choose-one)
     - [Step 2: Choose a Package or A La Carte](#step-2-choose-a-package-or-a-la-carte)
     - [Step 3: Package Menu](#step-3-package-menu)
     - [Step 4: Delivery Location](#step-4-delivery-location)
     - [Step 5: Order Summary - Card Chip List](#step-5-order-summary---card-chip-list)
     - [Step 6: Payment - Stored Payment Method](#step-6-payment---stored-payment-method)
     - [Step 7: Order Confirmation](#step-7-order-confirmation)
-    - [Step 8: Transactional Updates](#step-8-transactional-updates)
+    - [Step 8: Transactional Updates with Quick Action to Call the Coordinator](#step-8-transactional-updates-with-quick-action-to-call-the-coordinator)
 
 ---
 
@@ -110,7 +110,7 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 
 ## 🎉 Getting Started
 
-### Step 1. Create a Promotional Template (Choose One)
+### Step 1: Create a Promotional Template (Choose One)
 
 You’ll start by creating a template for a promotional message. Choose one of the two options below (creating a carousel or a rich card template):
 
@@ -281,7 +281,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 2. Choose a Package or A La Carte
+### Step 2: Choose a Package or A La Carte
 
 Create a TEMPLATE: Package or A la Carte Rich Card with 2 Quick replies
 
@@ -338,7 +338,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 3. Package Menu
+### Step 3: Package Menu
 
 Create a template - Rich Card Carousel
 
@@ -452,13 +452,13 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 4. Delivery Location
+### Step 4: Delivery Location
 
 Create RCS Text to prompt for text response
 
 ---
 
-### Step 5. Order Summary - Card Chip List
+### Step 5: Order Summary - Card Chip List
 
 Create order summary template with chip list
 
@@ -521,7 +521,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 6. Payment - stored payment method
+### Step 6: Payment - stored payment method
 
 Create Payment confirmation template with Rich Card Chip List
 
@@ -588,7 +588,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 7. Order Confirmation
+### Step 7: Order Confirmation
 
 Option 1 PNG with message body
 
@@ -657,7 +657,6 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 Output: `Content SID: HXda90b029a8c48dacbfdfd0152c054df5`
 
 Send Order Confirmation RCS w media PDF and no body/using twilio/media
-
 
 <details>
   <summary>Click to view the code</summary>
@@ -733,7 +732,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 8. Transactional Updates with quick action to Call the Coordinator
+### Step 8: Transactional Updates with Quick Action to Call the Coordinator
 
 Create Rich Card with 1 Quick Reply and 1 Phone Number
 
