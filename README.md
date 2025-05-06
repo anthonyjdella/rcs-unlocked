@@ -1,19 +1,44 @@
-# RCS Unlocked: Send Rich Messages in 60 Minutes
+# 🚀 RCS Unlocked: Send Rich Messages in 60 Minutes
 
-Welcome to this hands-on lab for intermediate Twilio users at [SIGNAL 2025](https://signal.twilio.com/2025).
+Welcome to this 60-minute hands-on lab for intermediate Twilio users at [SIGNAL 2025](https://signal.twilio.com/2025)!
 
-## Overview
+## 📖 Workshop Overview
 
-RCS is the next big thing in messaging and is quickly gaining traction around the world.
+RCS (Rich Communication Services) is the next big thing in messaging and it's already making waves. Twilio already delivers over 750M RCS messages every month! 
 
-In this session, we'll cover the core functionality of onboarding and sending RCS messages—and go a step further by showing you how to build RCS messages in real time.
+In this lab, you'll learn how to:
+- Set up and onboard for RCS messaging with Twilio
+- Send rich, branded messages using a Messaging Service
+- Build and test RCS messages in real-time
 
-Come see how, with the power of Twilio and RCS, you can create a branded, rich, and highly personalized messaging experience for your customers.
+Come see how Twilio + RCS can help you create powerful, interactive messaging experiences for your users.
 
-## Pre-requisites
+## 🎯 Workshop Objectives
 
-1. Account SID approved for RCS before the workshop using this form: https://www.twilio.com/en-us/messaging/channels/rcs#request-access-form
-2. SMS capable (registered/verified, if required) phone number in your RCS-approved account
-3. Understanding of Twilio Programmable Messaging Message Resource and Messaging Services Preferably
-4. RCS-enabled mobile device
+- [ ] Create an RCS Sender and whitelist RCS-enabled test phone number
+- [ ] Add the RCS Sender to a Messaging Service
+- [ ] Send Rich Messages using a Messaging Service
+
+## 🧰 Prerequisites
+
+Before the workshop, make sure to have the following:
+
+1. **RCS Access Approved**
+
+Your Twilio account must be approved for RCS *before* the workshop. Request access using [this form](https://www.twilio.com/en-us/messaging/channels/rcs#request-access-form)
+
+*If you didn't fill this out ahead of time and still need access during the session, you can use [this expedited access form](https://docs.google.com/forms/d/e/1FAIpQLScj6ZFA1R-r712nU8l0YygFYCVlf0Fg_3mtuc-5r9RPkAs8mw/viewform) to request access*
+
+2. **An SMS-capable Twilio Phone Number**
+
+This number must be registered/verified and belong to your RCS-enabled Twilio account.
+
+3. **A Basic Understanding of Twilio Messaging**
+
+You should be familiar with:
+
+* [Message Resource](https://www.twilio.com/docs/messaging/api/message-resource)
+* [Messaging Services](https://www.twilio.com/docs/messaging/services)
+
+4. **An RCS-enabled Mobile Device**
 
