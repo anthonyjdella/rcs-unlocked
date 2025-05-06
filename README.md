@@ -74,4 +74,39 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 📸 **Example Screenshot**  
 ![Content Template UI](./assets/content-template-ui.png)  
 
-🔗 [Learn more in the Twilio Docs]([https://www.twilio.com/docs/messaging/content-api/overview](https://www.twilio.com/docs/content))
+🔗 [Learn more in the Twilio Docs](https://www.twilio.com/docs/content)
+
+---
+
+## 📚 Resources
+
+### 🧑‍💻 Code Samples
+
+- **Create and Send Examples**: Step-by-step examples for creating content templates and sending RCS messages using Twilio's API.
+- **Postman Collection**:  
+  [Download Signal RCS Rich Messaging.postman_collection.json](./assets/Signal-RCS-Rich-Messaging.postman_collection.json)  
+
+### 🌀 cURL Examples
+
+<details>
+  <summary><strong>➕ Create Content Template</strong></summary>
+
+  ```bash
+  curl -X POST https://content.twilio.com/v1/Content \
+    -u ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX:your_auth_token \
+    -H "Content-Type: application/json" \
+    -d '{
+      "friendly_name": "Promo Template",
+      "language": "en",
+      "variables": ["discount_code"],
+      "types": [{
+        "type": "twilio/rich_card",
+        "properties": {
+          "title": "Limited Time Offer!",
+          "body": "Use code {{discount_code}} to save 20%.",
+          "media": {
+            "url": "https://example.com/offer.png"
+          }
+        }
+      }]
+    }'
