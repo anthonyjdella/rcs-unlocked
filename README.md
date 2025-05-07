@@ -98,7 +98,7 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 📸 **Example Screenshot**  
 ![Content Template UI](./assets/content-template-ui.png)  
 
-🔗 [Learn more in the Twilio Docs](https://www.twilio.com/docs/content)
+🔗 [Learn more in the Twilio Docs](https://www.twilio.com/docs/content/create-templates-with-the-content-template-builder)
 
 ---
 
@@ -114,11 +114,11 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 
 ### Step 1: Create a Promotional Message Template (Choose One)
 
-Start by creating a rich promotional message template. You can choose either a carousel (multiple cards) or a single rich card with media.
+Start by creating a rich promotional message template. You can choose either a carousel (multiple cards) or a single rich card with media. You can do this with no code in the UI or with the snippets below. For this demo we'll use the code snippets. 
 
 #### Option A: Create a Carousel Template (Multiple Cards)
 
-This option creates a carousel template with multiple event cards and actions.
+This option creates a ![carousel template](https://www.twilio.com/docs/content/carousel) with multiple event cards and actions.
 
 <details>
   <summary>Click to view the code</summary>
@@ -230,7 +230,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 #### Option B: Create a Rich Card Template with Media
 
-This option creates a single rich card with media, quick actions, and links.
+This option creates a single ![rich card](https://www.twilio.com/docs/content/twiliocard) with media, quick actions, and links.
 
 <details>
   <summary>Click to view the code</summary>
