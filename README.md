@@ -83,6 +83,8 @@ You should be familiar with:
 - **Content Types**  
   Twilio’s omnichannel representation of rich content. Many types can be used interchangeably across messaging channels with no customization. However, some components within a content type may be incompatible with certain channels, even if the type is generally supported.
 
+- More information about our Rich Content system can be found here: [Content Docs](https://www.twilio.com/docs/content)
+
 ---
 
 ### Twilio Console UI Experience
