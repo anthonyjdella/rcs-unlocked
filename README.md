@@ -70,9 +70,12 @@ You should be familiar with:
 
 ---
 
-## Rich Messaging Concepts
+## Twilio Rich Messaging Concepts
 
 ### Basic Terminology
+
+- **Content Template**  
+  A message template created using the Content API or the Twilio Content Template UI.
 
 - **Content Sid**  
   A unique identifier for a content template. It is a 34-character string that starts with `HX`, and can only be used by the Twilio Account SID that created it.
