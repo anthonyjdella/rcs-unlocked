@@ -184,7 +184,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n   \"friendly_name\": \"3 events more\",\n   \"language\": \"en\",\n   \"variables\": {\n       \"1\": \"Amy\"\n   },\n   \"types\": {\n       \"twilio/carousel\": {\n                \"body\": \"Hi, {{1}} 👋 \\nTotal Tailgate here to share upcoming events in your preferred area!\",\n                \"cards\": [\n                    {\n     \"title\":\"Hootie & the Blowfish\",\n     \"body\":\"September 26, 2024\",\n     \"media\":\"https://sepia-heron-4404.twil.io/assets/HootieAndTheBlowfish.png\",\n     \"actions\":[\n       {\n         \"type\":\"QUICK_REPLY\",\n         \"title\":\"For sure!\",\n         \"id\":\"for_sure\"\n       },\n       {\n         \"type\":\"URL\",\n         \"title\":\"See more info\",\n         \"url\":\"https://www.livenation.com/artist/K8vZ9171oJV/hootie-the-blowfish-events?awtrc=true&c=SEM_LNConcertautomation_ggl_21359047336_166213539074_hootie%20%26%20the%20blowfish%20tour&GCID=0&&gad_source=1&gclid=Cj0KCQjwrp-3BhDgARIsAEWJ6SxQzE1OIBg-JoJUilCNSSo0d4CuQpwnJ9O-Pm8dzUmkoCgc6gkqJ2EaAjeZEALw_wcB&gclsrc=aw.ds\"\n       }\n     ]\n   },\n   {\n     \"title\":\"Eagles vs TB Bucs\",\n     \"body\":\"September 29, 2024\",\n     \"media\":\"https://sepia-heron-4404.twil.io/assets/Bucs%20vs%20Eagles.png\",\n     \"actions\":[\n       {\n         \"type\":\"QUICK_REPLY\",\n         \"title\":\"Count me in!\",\n         \"id\":\"im_in\"\n       },\n       {\n         \"type\":\"URL\",\n         \"title\":\"See more info\",\n         \"url\":\"https://www.ticketmaster.com/tampa-bay-buccaneers-tickets/artist/806026\"\n       }\n     ]\n   },\n   {\n     \"title\":\"Hurricanes vs TB Bolts!\",\n     \"body\":\"September 27, 2024\",\n     \"media\":\"https://sepia-heron-4404.twil.io/assets/Bolts%20vs%20Hurricanes.png\",\n     \"actions\":[\n       {\n         \"type\":\"QUICK_REPLY\",\n         \"title\":\"Heck, yeah!\",\n         \"id\":\"heck_yeah\"\n       },\n       {\n         \"type\":\"URL\",\n         \"title\":\"See more info\",\n         \"url\":\"https://tickets-center.com/tickets/v/Amalie-Arena/9618/e/NHL-Preseason/5052828/?eventId=5052828&eventName=NHL+Preseason%3a+Nashville+Predators+at+Tampa+Bay+Lightning&venueName=Amalie+Arena&venueId=9618&eventDateTime=09%2f27%2f2024+19%3a00%3a00&city=Tampa&stateProvince=FL&performerId=841&performerName=Tampa+Bay+Lightning&cid=645192248057&nid=1&accid=4186221823&campaignid=1532181056&adgroupid=65059184092&wsvar=1-645192248057+%5bgclid%7cCj0KCQjwrp-3BhDgARIsAEWJ6SwYKFAqALmnyzMDJFYZUJJmsS6BLsjhd533vS-OVr90BcLZ-1DdEkAaAjhMEALw_wcB%5d+(ag%7c65059184092)+(uuid%7ca3a178026c274859b8886b4d3ebc9338)&gclid=Cj0KCQjwrp-3BhDgARIsAEWJ6SwYKFAqALmnyzMDJFYZUJJmsS6BLsjhd533vS-OVr90BcLZ-1DdEkAaAjhMEALw_wcB&random=4504497115793608552&device=c&ismobile=false&loc_physical_ms=200524&referer=https%3a%2f%2fwww.google.com%2f&vx=0\"\n       }\n     ]\n   },\n   {\n     \"title\":\"Show Me More\",\n     \"body\":\"Events\",\n     \"media\":\"https://sepia-heron-4404.twil.io/assets/more%20events.png\",\n     \"actions\":[\n       {\n         \"type\":\"QUICK_REPLY\",\n         \"title\":\"Show Me More in Tampa\",\n         \"id\":\"show_me_more_my_pref_loc\"\n       },\n       {\n           \"type\":\"URL\",\n           \"title\":\"Show More in Another Area\",\n           \"url\":\"https://twilio.com/\"\n       }\n     ]\n   }\n]\n       }\n   }\n}",
+					"raw": "{\n   \"friendly_name\": \"packages\",\n   \"language\": \"en\",\n   \"variables\": {\n       \"1\": \"Twilio\"\n   },\n   \"types\": {\n       \"twilio/carousel\": {\n                \"body\": \"Choose a Package\",\n                \"cards\": [\n                    {\n     \"title\":\"The Whole Sha-bang!\",\n     \"body\":\"Party for 20 with BBQ\",\n     \"media\":\"https://sepia-heron-4404.twil.io/assets/thewholeshabang.png\",\n     \"actions\":[\n       {\n         \"type\":\"QUICK_REPLY\",\n         \"title\":\"For sure!\",\n         \"id\":\"for_sure\"\n       },\n       {\n         \"type\":\"URL\",\n         \"title\":\"See more info\",\n         \"url\":\"https://sepia-heron-4404.twil.io/assets/thewholeshabang_desc.png\"\n       }\n     ]\n   },\n   {\n     \"title\":\"Game on!\",\n     \"body\":\"Party for 10 with BBQ\",\n     \"media\":\"https://sepia-heron-4404.twil.io/assets/gameon.png\",\n     \"actions\":[\n       {\n         \"type\":\"QUICK_REPLY\",\n         \"title\":\"Count me in!\",\n         \"id\":\"im_in\"\n       },\n       {\n         \"type\":\"URL\",\n         \"title\":\"See more info\",\n         \"url\":\"https://sepia-heron-4404.twil.io/assets/gameon_desc.png\"\n       }\n     ]\n   },\n   {\n     \"title\":\"All in!\",\n     \"body\":\"Party for 20\",\n     \"media\":\"https://sepia-heron-4404.twil.io/assets/allin.png\",\n     \"actions\":[\n       {\n         \"type\":\"QUICK_REPLY\",\n         \"title\":\"Heck, yeah!\",\n         \"id\":\"heck_yeah\"\n       },\n       {\n         \"type\":\"URL\",\n         \"title\":\"See more info\",\n         \"url\":\"https://sepia-heron-4404.twil.io/assets/allin_desc.png\"\n       }\n     ]\n   },\n   {\n     \"title\":\"Party on!\",\n     \"body\":\"Party for 10\",\n     \"media\":\"https://sepia-heron-4404.twil.io/assets/partyon.png\",\n     \"actions\":[\n       {\n         \"type\":\"QUICK_REPLY\",\n         \"title\":\"Ready to Party!\",\n         \"id\":\"ready_to_party\"\n       },\n       {\n         \"type\":\"URL\",\n         \"title\":\"See more info\",\n         \"url\":\"https://sepia-heron-4404.twil.io/assets/partyon_desc.png\"\n       }\n     ]\n   }\n]\n       }\n   }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -202,6 +202,119 @@
 					"path": [
 						"v1",
 						"Content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create RCS Text template to prompt for text response",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{AUTH_TOKEN}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{ACCOUNT_SID}}",
+							"type": "string"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"friendly_name\": \"text template\",\n   \"language\": \"en\",\n   \"variables\": {\"1\":\"Amy\"},\n   \"types\": {\n       \"twilio/text\": {\n           \"body\": \"{{1}}, please provide your delivery location.\"\n       }\n   }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://content.twilio.com/v1/Content",
+					"protocol": "https",
+					"host": [
+						"content",
+						"twilio",
+						"com"
+					],
+					"path": [
+						"v1",
+						"Content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Send RCS Basic Message to prompt for text response",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{AUTH_TOKEN}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{ACCOUNT_SID}}",
+							"type": "string"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "To",
+							"value": "{{TO_NUMBER}}",
+							"type": "text"
+						},
+						{
+							"key": "From",
+							"value": "{{MSG_SRV_SID}}",
+							"type": "text"
+						},
+						{
+							"key": "Body",
+							"value": "Please enter the delivery location",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.twilio.com/2010-04-01/Accounts/{{ACCOUNT_SID}}/Messages",
+					"protocol": "https",
+					"host": [
+						"api",
+						"twilio",
+						"com"
+					],
+					"path": [
+						"2010-04-01",
+						"Accounts",
+						"{{ACCOUNT_SID}}",
+						"Messages"
 					]
 				}
 			},
@@ -234,7 +347,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n   \"friendly_name\": \"pkg or a la carte\",\n   \"language\": \"en\",\n   \"variables\": {\"1\":\"Amy\"},\n   \"types\": {\n       \"twilio/card\": {\n                   \"title\": \"Super choice, {{1}}! Do you want a Package or choose from our A la Carte Menu?\",\n                   \"actions\": [\n                       {\n                           \"title\": \"Package\",\n                           \"type\": \"QUICK_REPLY\",\n                           \"id\": \"package\"\n                       },\n                       {\n                           \"title\": \"A la Carte Menu\",\n                           \"type\": \"QUICK_REPLY\",\n                           \"id\": \"alacarte\"\n                       }\n                   ]\n               },\n       \"twilio/text\": {\n           \"body\": \"Super choice, {{1}}! Do you want a Package or choose from our A la Carte Menu?\"\n       }\n   }\n}",
+					"raw": "{\n   \"friendly_name\": \"order summary card Chip list w 2 quick replies and 1 phone number\",\n   \"language\": \"en\",\n   \"variables\": { \"1\": \"Amy\"},\n   \"types\": {\n       \"twilio/card\": {\n                   \"title\": \"Thank you, {{1}}. Please review your Total Tailgate Order Summary below and Confirm or Edit. \\n   Order Summary \\n   . \\n   . \\n   . \\n   . \",\n                   \"subtitle\": \"To unsubscribe, reply Stop\",\n                   \"actions\": [\n                       {\n                           \"id\": \"confirm\",\n                           \"title\": \"CONFIRM\",\n                           \"type\": \"QUICK_REPLY\"\n                       },\n                       {\n                           \"id\": \"edit\",\n                           \"title\": \"EDIT\",\n                           \"type\": \"QUICK_REPLY\"\n                       },\n                       {\n                           \"phone\": \"+17277328175\",\n                           \"title\": \"Call Total Tailgate\",\n                           \"type\": \"PHONE_NUMBER\"\n                       }\n                   ]\n               },\n       \"twilio/text\": {\n           \"body\": \"Please review your Total Tailgate Order Summary. REPLY either CONFIRM or EDIT\"\n       }\n   }\n}\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -258,7 +371,7 @@
 			"response": []
 		},
 		{
-			"name": "Create a Rich Card TEMPLATE with MMS Fallback",
+			"name": "Create Payment confirmation template with Rich Card Chip List (MMS Fallback)",
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -408,6 +521,56 @@
 			"response": []
 		},
 		{
+			"name": "Send PDF on Rich Card (May Fail with Error)",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "{{AUTH_TOKEN}}",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "{{ACCOUNT_SID}}",
+							"type": "string"
+						},
+						{
+							"key": "showPassword",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"friendly_name\": \"pdf w body and 1 phone number\",\n   \"language\": \"en\",\n   \"variables\": { \"1\": \"Amy\"},\n   \"types\": {\n       \"twilio/card\": {\n                   \"title\": \"{{1}}, attached is your Total Tailgate Order Confirmation. Please call Total Tailgate or ASSISTANCE if further assistance is needed.\",\n                   \"media\": [\"https://sepia-heron-4404.twil.io/assets/TT%20order%20receipt.pdf\"],\n                   \"subtitle\": \"To unsubscribe, reply Stop\",\n                   \"actions\": [\n                       {\n                           \"id\": \"assistance\",\n                           \"title\": \"ASSISTANCE\",\n                           \"type\": \"QUICK_REPLY\"\n                       },\n                       {\n                           \"phone\": \"+17277328175\",\n                           \"title\": \"Call Total Tailgate\",\n                           \"type\": \"PHONE_NUMBER\"\n                       }\n                   ]\n               },\n       \"twilio/media\": {\n                   \"body\": \"{{1}}, here is your Total Tailgate Order Confirmation. Please call Total Tailgate or Reply ASSISTANCE if further assistance is needed.\",  \n                   \"media\": [\"https://sepia-heron-4404.twil.io/assets/TT%20order%20receipt.png\"]\n                   }\n\n\n   }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://content.twilio.com/v1/Content",
+					"protocol": "https",
+					"host": [
+						"content",
+						"twilio",
+						"com"
+					],
+					"path": [
+						"v1",
+						"Content"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Create Rich Card with 1 Quick Reply and 1 Phone Number",
 			"request": {
 				"auth": {
@@ -458,69 +621,6 @@
 			"response": []
 		},
 		{
-			"name": "Send RCS Basic Message",
-			"request": {
-				"auth": {
-					"type": "basic",
-					"basic": [
-						{
-							"key": "password",
-							"value": "{{AUTH_TOKEN}}",
-							"type": "string"
-						},
-						{
-							"key": "username",
-							"value": "{{ACCOUNT_SID}}",
-							"type": "string"
-						},
-						{
-							"key": "showPassword",
-							"value": false,
-							"type": "boolean"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "To",
-							"value": "+17604209954",
-							"type": "text"
-						},
-						{
-							"key": "From",
-							"value": "MGbc9979b09c2c85f408c36f077e631251",
-							"type": "text"
-						},
-						{
-							"key": "Body",
-							"value": "Please enter the delivery location",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "https://api.twilio.com/2010-04-01/Accounts/{{ACCOUNT_SID}}/Messages",
-					"protocol": "https",
-					"host": [
-						"api",
-						"twilio",
-						"com"
-					],
-					"path": [
-						"2010-04-01",
-						"Accounts",
-						"{{ACCOUNT_SID}}",
-						"Messages"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Send RCS Content Template",
 			"request": {
 				"auth": {
@@ -550,24 +650,18 @@
 					"urlencoded": [
 						{
 							"key": "To",
-							"value": "+17604209954",
+							"value": "{{TO_NUMBER}}",
 							"type": "text"
 						},
 						{
 							"key": "From",
-							"value": "MGbc9979b09c2c85f408c36f077e631251",
+							"value": "{{MSG_SRV_SID}}",
 							"type": "text"
 						},
 						{
 							"key": "ContentSid",
-							"value": "HXe7302b75c92c7797f817275ba288326b",
+							"value": "HX8f6665e148fe7d677eba4bb753814ab9",
 							"type": "text"
-						},
-						{
-							"key": "Body",
-							"value": "hi",
-							"type": "text",
-							"disabled": true
 						}
 					]
 				},
