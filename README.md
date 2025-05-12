@@ -285,7 +285,7 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 ---
 
-### Step 2: Present Package or A La Carte Menu
+### Step 2: Present Package or A La Carte Menu with Chip List
 
 Create a template that prompts the user to choose between a package or an a la carte menu using quick replies.
 
