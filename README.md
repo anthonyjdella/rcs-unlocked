@@ -115,6 +115,18 @@ Twilio offers a visual interface for managing your rich messaging content. From 
 
 ## Getting Started
 
+> You will need to update the following in your code snippets:
+>
+> - Account SID and Auth Token if you do not use environment variables or refer to them differently.
+>
+> - To: number
+>
+> - From: MG SID
+>
+> - Content SID
+>
+> The MG SID and Content SIDs provided will not work when using your own Twilio account.
+
 ### Step 1: Create a Promotional Message Template (Choose One)
 
 Start by creating a rich promotional message template. You can choose either a carousel (multiple cards) or a single rich card with media. You can do this with no code in the UI or with the snippets below. For this demo we'll use the code snippets. 
@@ -215,7 +227,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX4c3e08a18d3f05b564a226badf638cf7`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the carousel message to a user.
 
@@ -224,9 +236,9 @@ Next, send the carousel message to a user.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HX4c3e08a18d3f05b564a226badf638cf7" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -267,7 +279,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HXaa7686847b4a35ced2c080d5a841b37a`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the rich card message to a user.
 
@@ -276,9 +288,9 @@ Next, send the rich card message to a user.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HXaa7686847b4a35ced2c080d5a841b37a" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -324,7 +336,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX4f5dd3d8824daa877df42546f2fdd6a9`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the package or a la carte menu to the user.
 
@@ -333,9 +345,9 @@ Next, send the package or a la carte menu to the user.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HX4f5dd3d8824daa877df42546f2fdd6a9" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -438,7 +450,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX12da7e1c56ac98c8739d8090fc4fb602`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the package options carousel to the user.
 
@@ -447,9 +459,9 @@ Next, send the package options carousel to the user.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HX12da7e1c56ac98c8739d8090fc4fb602" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -480,7 +492,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX2babad40ef1a79296ac0aa54c64079fe`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 ---
 
@@ -529,7 +541,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX921836a9f710b0ba613d522218cd0724`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the order summary with action chips to the user.
 
@@ -538,9 +550,9 @@ Next, send the order summary with action chips to the user.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HX921836a9f710b0ba613d522218cd0724" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -596,7 +608,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX9a32a4307bc4e420c521f75e7eceeaf8`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the payment confirmation message to the user.
 
@@ -605,9 +617,9 @@ Next, send the payment confirmation message to the user.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HX9a32a4307bc4e420c521f75e7eceeaf8" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -643,7 +655,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX6bca18ddf61bb5b7e554d873fbf4fc51`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the order confirmation RCS with media PNG and body.
 
@@ -652,9 +664,9 @@ Next, send the order confirmation RCS with media PNG and body.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HX6bca18ddf61bb5b7e554d873fbf4fc51" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -682,7 +694,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HXda90b029a8c48dacbfdfd0152c054df5`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the order confirmation RCS with media PDF and no body.
 
@@ -691,9 +703,9 @@ Next, send the order confirmation RCS with media PDF and no body.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HXda90b029a8c48dacbfdfd0152c054df5" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -742,7 +754,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX8c4dc565a972de9f14bb12cf63492945`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the order confirmation rich card template (PDF and body and 1 action).
 
@@ -751,9 +763,9 @@ Next, send the order confirmation rich card template (PDF and body and 1 action)
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HX8c4dc565a972de9f14bb12cf63492945" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
@@ -804,7 +816,7 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
-Output: `Content SID: HX61dce72ab43b9867fbf61018c9a64f69`
+Output: `Content SID: HXxxxxxxxxxxxxxxxxxx`
 
 Next, send the transactional update message to the user.
 
@@ -813,9 +825,9 @@ Next, send the transactional update message to the user.
 
 ```
 curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Messages.json \
---data-urlencode "From=MGf4a7e201d54c623e6e3f1a91e5a17630" \
+--data-urlencode "From=MGxxxxxxxxxxxxxxxxxx" \
 --data-urlencode "To=+18138958197" \
---data-urlencode "ContentSid=HX61dce72ab43b9867fbf61018c9a64f69" \
+--data-urlencode "ContentSid=HXxxxxxxxxxxxxxxxxxx" \
 -u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN | json_pp
 ```
 </details>
