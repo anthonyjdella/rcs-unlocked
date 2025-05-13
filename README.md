@@ -460,6 +460,26 @@ curl -X POST https://api.twilio.com/2010-04-01/Accounts/$TWILIO_ACCOUNT_SID/Mess
 
 Prompt the user to reply with their delivery location using a simple RCS text message.
 
+<details>
+  <summary>Click to view the code</summary>
+
+```
+curl -X POST 'https://content.twilio.com/v1/Content' \
+-H 'Content-Type: application/json' \
+-u $TWILIO_ACCOUNT_SID:$TWILIO_AUTH_TOKEN \
+-d '{
+   "friendly_name": "text template",
+   "language": "en",
+   "variables": {"1":"Amy"},
+   "types": {
+       "twilio/text": {
+           "body": "{{1}}, please provide your delivery location."
+       }
+   }
+}'
+```
+</details>
+
 ---
 
 ### Step 5: Send Order Summary with Action Chips
