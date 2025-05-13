@@ -480,6 +480,8 @@ curl -X POST 'https://content.twilio.com/v1/Content' \
 ```
 </details>
 
+Output: `Content SID: HX2babad40ef1a79296ac0aa54c64079fe`
+
 ---
 
 ### Step 5: Send Order Summary with Action Chips
