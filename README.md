@@ -67,6 +67,7 @@ You should be familiar with:
 * [Messaging Services](https://www.twilio.com/docs/messaging/services)
 
 4. **An RCS-enabled Mobile Device**
+   Don't worry if you don't haev one. We've got you covered!
 
 ---
 
