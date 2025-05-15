@@ -4,6 +4,9 @@ Welcome to this 60-minute hands-on lab for intermediate Twilio users at [SIGNAL 
 
 ---
 
+Total Tailgate logo: https://sepia-heron-4404.twil.io/assets/Total%20Tailgate%20RCS.png
+Total Tailget banner: https://sepia-heron-4404.twil.io/assets/twilio%20banner.jpg
+
 ## 📚 Table of Contents
 
 1. [Workshop Overview](#workshop-overview)
